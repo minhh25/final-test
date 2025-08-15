@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="start">
+            <button class="btn-start">Bắt đầu</button>
+            <button class="btn-end hidden">Kết thúc</button>
+            <div id="win" class="win-text hidden">YOU WIN!</div>
+        </div>
+        <div class="game">
+            <div class="box-game">
+                <div class="tile bg-green-100  text-green-500">1</div>
+                <div class="tile bg-red-100    text-red-500">2</div>
+                <div class="tile bg-blue-100   text-blue-500">3</div>
+                <div class="tile bg-purple-100 text-purple-500">4</div>
+                <div class="tile bg-yellow-100 text-yellow-500">5</div>
+                <div class="tile bg-pink-100   text-pink-500">6</div>
+                <div class="tile bg-indigo-100 text-indigo-500">7</div>
+                <div class="tile bg-gray-100   text-gray-500">8</div>
+                <div class="tile bg-emerald-100 text-emerald-500">9</div>
+                <div class="tile bg-amber-100   text-amber-500">10</div>
+                <div class="tile bg-lime-100    text-lime-500">11</div>
+                <div class="tile bg-black"></div>
+              </div>
+            <div class="gameplay-info">
+                <div class="clock">
+                    <b><h2>Đồng Hồ</h2></b>
+                    <b><h1>00:00</h1></b>
+                </div>
+                <div class="tutorial">
+                    <h3>Hướng dẫn di chuyển</h3>
+                    <div class="keys-grid">
+                        <span></span>
+                        <span class="key">↑</span>
+                        <span></span>
+
+                        <span class="key">←</span>
+                        <span class="key">↓</span>
+                        <span class="key">→</span>
+                    </div>
+                    <div class="keys-grid">
+                        <span></span>
+                        <span class="key">W</span>
+                        <span></span>
+                      </div>
+                    
+                      <div class="keys-grid">
+                        <span class="key">A</span>
+                        <span class="key">S</span>
+                        <span class="key">D</span>
+                      </div>
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="result">
+            <div class="history-card">
+                <div class="history-title">Lịch Sử Lượt Chơi</div>
+                <table class="history-table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Bước đi</th>
+                      <th>Thời Gian</th>
+                    </tr>
+                  </thead>
+                  <tbody id="history-body">
+                    
+                  </tbody>
+                </table>
+              </div>
+        </div>
+    </div>
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

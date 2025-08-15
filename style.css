@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #afb8ca;
+}
+
+.hidden{
+    display: none;
+}
+
+.container{
+    margin: 50px;
+    height: 100vh;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap:30px;
+}
+
+.container .start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .start .btn-start{
+    background-color: rgb(5, 204, 5);
+    color:white;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.container .start .btn-end{
+    background-color: rgb(227, 52, 17);
+    color:white;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.container .start .btn-start:hover{
+    cursor: pointer;
+    background-color: rgb(0, 193, 0);
+}
+
+
+.win-text{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(227, 52, 17);    
+    padding: 10px 20px;
+}
+
+
+.container .game{
+    display: flex;
+    height:fit-content;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+    gap:20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.container .game .box-game{
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 100px ;
+    gap: 20px;
+    padding:20px;
+    align-items: center;
+    justify-content: center;
+    border-radius:10px;
+    background-color: #f9f8f8 ;
+}
+
+.tile{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameplay-info{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.gameplay-info .clock{
+    background-color: rgb(225, 254, 226);
+    padding:10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.tutorial{
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+    text-align: center;
+  }
+
+.keys-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+}
+
+.key{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #e5e7eb;
+    padding:5px;
+}
+
+.result{
+    background-color: #f6f7f9;
+    padding: 10px 20px;
+    height: auto;
+}
+
+.result .history-card{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.history-title{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #f6f7f9;
+}
+
+.history-table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.result .history-table thead th{
+    background: #e5e7eb;      /* xám nhạt như hình */
+    color: #111827;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.result .history-table tbody td{
+    padding: 10px 20px;
+    border-top: 1px solid #e5e7eb;
+  }
