@@ -140,7 +140,6 @@ function batDau(){
   btnStart.classList.add('hidden');
   btnEnd.classList.remove('hidden');
   winEl.classList.add('hidden');       
-  btnStart.textContent = 'Bắt đầu';
   taoBan();
   resetBan();
   tron100();
@@ -153,7 +152,6 @@ function ketThuc(){
   tatGio();
   btnEnd.classList.add('hidden');
   btnStart.classList.remove('hidden');
-  btnStart.textContent = 'Bắt đầu';
   winEl.classList.add('hidden');
 
   taoBan();
